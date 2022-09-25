@@ -15,10 +15,10 @@ class RoleUserTablesSeeder extends Seeder
      */
     public function run()
     {
-        // Cria usuários admins (dados controlados)
+        // Cria usernames admins (dados controlados)
         $this->createAdmins();
 
-        // Vincula usuários aos papéis
+        // Vincula usernames aos papéis
         $this->sync();    
     }
 

@@ -181,7 +181,7 @@ return [
         'text'      => 'texto',
         'time'      => 'hora',
         'title'     => 'título',
-        'username'  => 'usuário',
+        'username'  => 'username',
         'year'      => 'ano',
         'description' => 'descrição',
         'password_confirmation' => 'confirmação da senha',

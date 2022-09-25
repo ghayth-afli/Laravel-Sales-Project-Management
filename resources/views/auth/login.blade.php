@@ -23,19 +23,17 @@
                     <img src="{{ asset(\App\Models\Config::find(1)->caminho_img_login) }}" width="{{ \App\Models\Config::find(1)->tamanho_img_login }}%"/>
                     <br/>
                 @endif
-               
-                {!! \App\Models\Config::find(1)->titulo_login !!}             
             </div>
             <div class="login-box-body">
                 <p class="login-box-msg">Sign in to start your session</p>
                 <form  method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="form-group has-feedback">
-                        <input id="email" type="text" class="form-control" placeholder="Usuário" name="email" value="{{ old('email') }}" autofocus required="" AUTOCOMPLETE='off'>
+                        <input id="email" type="text" class="form-control" placeholder="username" name="email" value="{{ old('email') }}" autofocus required="" AUTOCOMPLETE='off'>
                         <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
-                        <input id="password" type="password" class="form-control" placeholder="Senha" name="password" required="" AUTOCOMPLETE='off'>
+                        <input id="password" type="password" class="form-control" placeholder="password" name="password" required="" AUTOCOMPLETE='off'>
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                         @if ($errors->has('email'))
                             <br/>
