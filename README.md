@@ -22,7 +22,9 @@ cmder will be refered as console
 - Run `php artisan serve`
 
 #####You can now access your project at localhost:8000 :)
-
+## Login Form:
+Username:admin@admin.com
+Password:admin
 ## If for some reason your project stop working do these:
 - `composer install`
 - `php artisan migrate`
